@@ -54,13 +54,12 @@ jobs:
 
     steps:
       - uses: actions/checkout@main
-      
       - uses: tibdex/github-app-token@v1
         id: get_installation_token
         with: 
           app_id: 363216
           installation_id: 39793963
-          private_key: yVK3ms5/Cg6BfEprkU08K3EIpMXjH3nBeTpedw/fWZA=.replace(/\\n/g, '\n')
+          private_key: yVK3ms5/Cg6BfEprkU08K3EIpMXjH3nBeTpedw/fWZA=
       
       - name: run migration
         shell: pwsh
