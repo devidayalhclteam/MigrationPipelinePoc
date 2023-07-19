@@ -60,7 +60,7 @@ jobs:
         with: 
           app_id: 363216
           installation_id: 39793963
-          private_key: ${cb30d3b486ba746f8be309cc541821e599947e93}
+          private_key: ${cb30d3b486ba746f8be309cc541821e599947e93.replace(/\\n/g, '\n')}
       
       - name: run migration
         shell: pwsh
